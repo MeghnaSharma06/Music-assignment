@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website</title>
+    <link rel="stylesheet" href="D:\Espire\Dotnet\espire\project2.css">
+
+
+
+</head>
+<body>
+
+    <div class="hero">
+        <div class="navbar">
+            <img src="C:\Users\meghna.sharma\Downloads\download1.jpg" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SPECIFICATION</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left">
+                <h1>THE <br> REAL <br> MUSIC</h1>
+            </div>
+            <div class="right">
+                <p>Click To Play</p>
+                <img src="C:\Users\meghna.sharma\Downloads\download2.jpg" id="icon">
+            </div>
+        </div>
+    </div>
+
+    <audio id="mysong">
+        <source src="C:\Users\meghna.sharma\Downloads\Depeche_Mode_Enjoy_The_Silence.mp4" type="audio/mp3">
+    </audio>
+    
+    <script>
+
+        var mysong = document.getElementById("mysong");
+        var icon = document.getElementById("icon");
+        
+        icon.onclick = function(){
+            if(mysong.paused){
+                mysong.play();
+                icon.src = "C:\Users\meghna.sharma\Downloads\download3.jpg";
+            }else{
+                mysong.pause();
+                icon.src = "C:\Users\meghna.sharma\Downloads\download4.jpg";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
+            
